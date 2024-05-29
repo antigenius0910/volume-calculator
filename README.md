@@ -2,6 +2,13 @@
 
 A simple library to calculate volumes of various geometric shapes.
 
+## Installation
+
+To install the VolumeCalculator library, use pip:
+
+```sh
+pip install git+https://github.com/antigenius0910/volume_calculator.git
+```
 
 ## Usage
 ```python
@@ -24,14 +31,21 @@ cone_volume = VolumeCalculator.cone(3, 5)
 print(f"Volume of cone: {cone_volume}")
 ```
 
+### Script Usage
+You can also use the included script volume_calculator_script.py to interactively calculate the volumes of different shapes. Run the script as follows:
+```sh
+python -m volume_calculator.volume_calculator_script
+```
+
 
 ### Running Tests
 
 To run the tests, use [pytest](https://pytest.org/):
 
 ```sh
-pytest test_volume_calculator.py
+pytest tests/test_volume_calculator.py
 ```
+
 
 
 ### Additional Notes:
