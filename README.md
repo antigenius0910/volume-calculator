@@ -37,15 +37,29 @@ You can also use the included script volume_calculator_script.py to interactivel
 python -m volume_calculator.volume_calculator_script
 ```
 
+### Running the Flask App
+```sh
+export FLASK_APP=volume_calculator/app.py
+flask run
+```
+
+for Cube
+```sh
+curl -X POST -H "Content-Type: application/json" -d '{"shape": "cube", "dimensions": {"side_length": 3}}' http://127.0.0.1:5000/calculate_volume
+```
+
+for Cylinder
+```sh
+curl -X POST -H "Content-Type: application/json" -d '{"shape": "cylinder", "dimensions": {"radius": 3, "height": 5}}' http://127.0.0.1:5000/calculate_volume
+```
+
 
 ### Running Tests
 
 To run the tests, use [pytest](https://pytest.org/):
-
 ```sh
 pytest tests/test_volume_calculator.py
 ```
-
 
 
 ### Additional Notes:
