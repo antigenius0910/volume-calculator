@@ -7,7 +7,7 @@ A simple library to calculate volumes of various geometric shapes.
 To install the VolumeCalculator library, use pip:
 
 ```sh
-pip install git+https://github.com/antigenius0910/volume_calculator.git
+pip install git+https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/antigenius0910/volume-calculator
 ```
 
 ## Usage
