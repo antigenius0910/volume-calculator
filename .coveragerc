@@ -11,6 +11,5 @@ exclude_lines =
 ignore_errors = True
 omit =
     tests/*
-    utils/*
     setup.py
-    progress.py
+    
