@@ -441,7 +441,11 @@ disable=raw-checker-failed,
         import-error,
         redefined-outer-name,
         consider-using-with,
-        unspecified-encoding
+        unspecified-encoding,
+        unused-import,
+        too-many-return-statements,
+        trailing-newlines,
+        missing-class-docstring,
 
 
 # Enable the message, report, category or checker with the given id(s). You can
