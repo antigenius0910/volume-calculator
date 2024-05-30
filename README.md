@@ -40,17 +40,23 @@ python -m volume_calculator.volume_calculator_script
 ### Running the Flask App
 ```sh
 export FLASK_APP=volume_calculator/app.py
-flask run
+flask run --host=0.0.0.0 --port=5050
+```
+
+### Running the Flask App in Docker
+```sh
+docker build -t volume_calculator_api .
+docker run -p 5050:5050 volume_calculator_api
 ```
 
 for Cube
 ```sh
-curl -X POST -H "Content-Type: application/json" -d '{"shape": "cube", "dimensions": {"side_length": 3}}' http://127.0.0.1:5000/calculate_volume
+curl -X POST -H "Content-Type: application/json" -d '{"shape": "cube", "dimensions": {"side_length": 3}}' http://127.0.0.1:5050/calculate_volume
 ```
 
 for Cylinder
 ```sh
-curl -X POST -H "Content-Type: application/json" -d '{"shape": "cylinder", "dimensions": {"radius": 3, "height": 5}}' http://127.0.0.1:5000/calculate_volume
+curl -X POST -H "Content-Type: application/json" -d '{"shape": "cylinder", "dimensions": {"radius": 3, "height": 5}}' http://127.0.0.1:5050/calculate_volume
 ```
 
 
