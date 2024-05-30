@@ -1,0 +1,16 @@
+[run]
+branch = True
+source = volume_calculator
+
+[report]
+exclude_lines =
+    if self.debug:
+    pragma: no cover
+    raise NotImplementedError
+    if __name__ == .__main__.:
+ignore_errors = True
+omit =
+    tests/*
+    utils/*
+    setup.py
+    progress.py

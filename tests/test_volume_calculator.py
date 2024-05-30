@@ -1,5 +1,5 @@
 import pytest
-from volume_calculator import VolumeCalculator
+from volume_calculator.volume_calculator import VolumeCalculator
 
 def test_cube():
     assert VolumeCalculator.cube(3) == 27
