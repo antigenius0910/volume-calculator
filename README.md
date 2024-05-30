@@ -68,9 +68,3 @@ To run the tests, use [pytest](https://pytest.org/):
 ```sh
 pytest tests/test_volume_calculator.py
 ```
-
-
-### Additional Notes:
-
-- Ensure that the `volume_calculator.py` file is in the same directory as `test_volume_calculator.py`.
-- The `README.md` file should provides comprehensive information on the library, including installation instructions, usage examples, API documentation, testing instructions, and contribution guidelines. This will help users understand and utilize the library effectively.
