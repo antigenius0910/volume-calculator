@@ -446,7 +446,8 @@ disable=raw-checker-failed,
         too-many-return-statements,
         trailing-newlines,
         missing-class-docstring,
-        too-many-branches
+        too-many-branches,
+        line-too-long
 
 
 # Enable the message, report, category or checker with the given id(s). You can
