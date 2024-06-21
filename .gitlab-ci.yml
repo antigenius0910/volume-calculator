@@ -9,7 +9,7 @@ unit:
   stage: test
   before_script:
     - python -m pip install --upgrade pip
-    - pip install pytest
+    - pip install pytest pytest-cov Flask
     - if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
   script:
     - pytest tests/
