@@ -5,8 +5,6 @@ include:
   - template: Jobs/SAST.gitlab-ci.yml
 
 unit:
-  rules:
-    - if: '$CI_COMMIT_BRANCH == main'
   image: python:3.10
   stage: test
   before_script:
