@@ -20,7 +20,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pytest pytest-cov Flask
+        pip install pytest pytest-cov Flask prometheus-client
 
     - name: Install the package
       run: |

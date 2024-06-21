@@ -9,7 +9,7 @@ unit:
   stage: test
   before_script:
     - python -m pip install --upgrade pip
-    - pip install pytest pytest-cov Flask
+    - pip install pytest pytest-cov Flask prometheus-client
     - pip install -e .
 
   script:
