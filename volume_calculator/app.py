@@ -1,8 +1,9 @@
+from prometheus_client import Counter, generate_latest, CollectorRegistry, multiprocess, make_wsgi_app
+from prometheus_client import CONTENT_TYPE_LATEST
+from werkzeug.middleware.dispatcher import DispatcherMiddleware
 from flask import Flask, request, jsonify
 from volume_calculator import VolumeCalculator
-from prometheus_client import Counter, generate_latest, CollectorRegistry, multiprocess, make_wsgi_app
-from werkzeug.middleware.dispatcher import DispatcherMiddleware
-from prometheus_client import CONTENT_TYPE_LATEST
+
 
 app = Flask(__name__)
 
